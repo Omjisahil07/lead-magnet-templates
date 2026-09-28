@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sd-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <filter id="sd-shadow">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#021c16" flood-opacity="0.4" />
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#031812" />
+  <g transform="translate(140, 50)" filter="url(#sd-shadow)">
+    <rect x="0" y="0" width="520" height="490" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="2" />
+    <rect x="0" y="0" width="14" height="490" fill="#10b981" />
+    <g transform="translate(48, 44)">
+      <rect width="145" height="24" rx="4" fill="#064e3b" />
+      <text x="12" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#34d399" letter-spacing="1.2">SYSTEM DESIGN · 2026</text>
+      <text x="0" y="64" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#f8fafc">DISTRIBUTED ARCHITECTURE</text>
+      <text x="0" y="96" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="800" fill="#10b981">CHEAT SHEET &amp; PRIMER</text>
+      <text x="0" y="122" font-family="'DM Sans', sans-serif" font-size="13" fill="#94a3b8">Load balancers, sharding, consensus, and event-driven patterns</text>
+      <line x1="0" y1="140" x2="420" y2="140" stroke="#334155" />
+      
+      <!-- Box Diagrams -->
+      <g transform="translate(0, 165)">
+        <rect width="125" height="75" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="16" y="32" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#38bdf8">API GATEWAY</text>
+        <text x="16" y="52" font-family="'DM Sans', sans-serif" font-size="10" fill="#94a3b8">Rate limiting &amp; auth</text>
+        
+        <line x1="125" y1="37" x2="155" y2="37" stroke="#38bdf8" stroke-width="2" />
+        
+        <rect x="155" y="0" width="125" height="75" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="171" y="32" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#34d399">SERVICES</text>
+        <text x="171" y="52" font-family="'DM Sans', sans-serif" font-size="10" fill="#94a3b8">Stateless workers</text>
+
+        <line x1="280" y1="37" x2="310" y2="37" stroke="#34d399" stroke-width="2" />
+
+        <rect x="310" y="0" width="110" height="75" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="326" y="32" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#f59e0b">REDIS CACHE</text>
+        <text x="326" y="52" font-family="'DM Sans', sans-serif" font-size="10" fill="#94a3b8">Sub-ms read tier</text>
+      </g>
+      
+      <g transform="translate(0, 275)">
+        <rect width="420" height="95" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="20" y="32" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">42 High-Concurrency Interview Blueprints</text>
+        <text x="20" y="56" font-family="'DM Sans', sans-serif" font-size="11" fill="#94a3b8">Included: Netflix streaming pipeline, Uber geo-dispatch, Stripe payment ledger.</text>
+        <text x="20" y="78" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600" fill="#34d399">Full SVG diagrams + editable Excalidraw files</text>
+      </g>
+    </g>
+  </g>
+</svg>

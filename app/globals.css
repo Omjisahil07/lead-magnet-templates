@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-page-surface: oklch(0.985 0.008 245.0);
+  --color-preview-surface: oklch(0.955 0.016 245.0);
+  --color-foreground: oklch(0.178 0.04 254.4);
+  --color-primary: oklch(0.537 0.151 248.4);
+  --color-primary-hover: oklch(0.47 0.143 249.2);
+  --color-accent: oklch(0.837 0.079 241.3);
+  --color-success: oklch(0.59 0.14 158.8);
+  --color-border: oklch(0.905 0.015 245);
+  --color-muted: oklch(0.965 0.012 245);
+  --color-muted-foreground: oklch(0.46 0.03 250);
+}
+
+:root {
+  --page-surface: oklch(0.985 0.008 245.0);
+  --preview-surface: oklch(0.955 0.016 245.0);
+  --foreground: oklch(0.178 0.04 254.4);
+  --primary: oklch(0.537 0.151 248.4);
+  --primary-hover: oklch(0.47 0.143 249.2);
+  --accent: oklch(0.837 0.079 241.3);
+  --success: oklch(0.59 0.14 158.8);
+  --border: oklch(0.905 0.015 245);
+  --muted: oklch(0.965 0.012 245);
+  --muted-foreground: oklch(0.46 0.03 250);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --page-surface: oklch(0.13 0.02 254.0);
+  --preview-surface: oklch(0.18 0.025 254.0);
+  --foreground: oklch(0.96 0.008 245.0);
+  --primary: oklch(0.62 0.16 248.4);
+  --primary-hover: oklch(0.68 0.15 248.4);
+  --accent: oklch(0.32 0.07 245);
+  --success: oklch(0.65 0.16 158.8);
+  --border: oklch(0.24 0.02 254);
+  --muted: oklch(0.19 0.02 254);
+  --muted-foreground: oklch(0.68 0.02 250);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--page-surface);
+  min-height: 100vh;
+}
+
+@keyframes resource-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-resource-reveal {
+  animation: resource-reveal 650ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-resource-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

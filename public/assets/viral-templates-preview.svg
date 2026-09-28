@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cover-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="sheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#090d16" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="600" fill="#0f172a" />
+  
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="500" y1="0" x2="500" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+    <line x1="700" y1="0" x2="700" y2="600" />
+    
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+
+  <!-- Main Document Preview Book / Guide Deck (Aspect 4:3) -->
+  <g transform="translate(140, 50)" filter="url(#card-shadow)">
+    <!-- Document Stack Under-layers -->
+    <rect x="24" y="24" width="470" height="450" rx="12" fill="#334155" opacity="0.4" />
+    <rect x="12" y="12" width="495" height="470" rx="12" fill="#1e293b" opacity="0.7" />
+    
+    <!-- Primary Document Surface -->
+    <rect x="0" y="0" width="520" height="490" rx="10" fill="url(#sheet)" stroke="#e2e8f0" stroke-width="1.5" />
+    
+    <!-- Left Spine Accent Strip -->
+    <path d="M 0 10 Q 0 0 10 0 L 16 0 L 16 490 L 10 490 Q 0 490 0 480 Z" fill="url(#accent-grad)" />
+    
+    <!-- Header Badge inside doc -->
+    <g transform="translate(48, 42)">
+      <rect x="0" y="0" width="130" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+      <text x="12" y="16" font-family="'Space Grotesk', system-ui, sans-serif" font-size="10" font-weight="700" fill="#2563eb" letter-spacing="1.2">FIELD GUIDE · 2026</text>
+      
+      <!-- Top Title -->
+      <text x="0" y="60" font-family="'Space Grotesk', system-ui, sans-serif" font-size="28" font-weight="800" fill="#0f172a" letter-spacing="-0.5">101 WINNING</text>
+      <text x="0" y="92" font-family="'Space Grotesk', system-ui, sans-serif" font-size="28" font-weight="800" fill="#2563eb" letter-spacing="-0.5">VIRAL TEMPLATES</text>
+      <text x="0" y="118" font-family="'DM Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">Proven Hook, Story, and Thread Frameworks</text>
+      
+      <line x1="0" y1="135" x2="420" y2="135" stroke="#e2e8f0" stroke-width="1" />
+      
+      <!-- Preview Content Cards Mockup -->
+      <!-- Card 1 -->
+      <g transform="translate(0, 155)">
+        <rect width="420" height="66" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <rect x="14" y="14" width="6" height="38" rx="2" fill="#2563eb" />
+        <text x="32" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#0f172a">#01 — THE "CONTRARIAN PARADOX" HOOK</text>
+        <text x="32" y="46" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">"Most people think [Common Belief]. But after [Hard Experience], I found [Opposite Truth]..."</text>
+      </g>
+      
+      <!-- Card 2 -->
+      <g transform="translate(0, 233)">
+        <rect width="420" height="66" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <rect x="14" y="14" width="6" height="38" rx="2" fill="#0ea5e9" />
+        <text x="32" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#0f172a">#02 — THE "TEARDOWN CHEATSHEET" STRUCTURE</text>
+        <text x="32" y="46" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">"Here is the exact step-by-step audit of how [Entity] reached [Milestone] in [Timeframe]:"</text>
+      </g>
+      
+      <!-- Card 3 -->
+      <g transform="translate(0, 311)">
+        <rect width="420" height="66" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <rect x="14" y="14" width="6" height="38" rx="2" fill="#10b981" />
+        <text x="32" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#0f172a">#03 — THE HIGH-RETENTION "BEFORE &amp; AFTER" LADDER</text>
+        <text x="32" y="46" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#475569">"Mistake vs Fix formula that generated 4.8M impressions with a 14.2% bookmark rate."</text>
+      </g>
+      
+      <!-- Watermark footer -->
+      <g transform="translate(0, 395)">
+        <text x="0" y="12" font-family="'DM Sans', sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="1">VERIFIED CONTENT · 48-PAGE EDITORIAL DOSSIER · INSTANT PDF</text>
+        <circle cx="410" cy="8" r="8" fill="#dcfce7" />
+        <path d="M 407 8 L 409 10 L 413 6" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>

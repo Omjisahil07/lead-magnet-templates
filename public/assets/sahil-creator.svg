@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="50%" stop-color="#1a252f" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d7b8" />
+      <stop offset="100%" stop-color="#e2ab82" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d241e" />
+      <stop offset="100%" stop-color="#15100c" />
+    </linearGradient>
+    <radialGradient id="rim-light" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" rx="200" fill="url(#bg-grad)" />
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.2" />
+  <rect width="400" height="400" rx="200" fill="url(#rim-light)" />
+  
+  <!-- Body/Shoulders -->
+  <path d="M 90 395 C 105 315, 145 285, 200 285 C 255 285, 295 315, 310 395 Z" fill="url(#shirt)" />
+  <!-- Collar -->
+  <path d="M 165 285 Q 200 310 235 285 Q 200 330 165 285 Z" fill="#0b1120" />
+  
+  <!-- Neck -->
+  <rect x="175" y="225" width="50" height="70" rx="10" fill="url(#skin)" />
+  <path d="M 175 240 Q 200 260 225 240 L 225 290 L 175 290 Z" fill="#d2986e" opacity="0.35" />
+  
+  <!-- Head & Ears -->
+  <ellipse cx="140" cy="185" rx="12" ry="18" fill="#e2ab82" />
+  <ellipse cx="260" cy="185" rx="12" ry="18" fill="#e2ab82" />
+  <ellipse cx="200" cy="180" rx="58" ry="72" fill="url(#skin)" />
+  
+  <!-- Hair -->
+  <path d="M 142 165 C 135 125, 160 90, 200 90 C 240 90, 265 125, 258 165 C 250 120, 240 106, 200 106 C 160 106, 150 120, 142 165 Z" fill="url(#hair)" />
+  <path d="M 145 135 C 170 100, 230 100, 255 135 C 240 115, 215 105, 185 110 C 160 115, 150 125, 145 135 Z" fill="#3a2f26" />
+  
+  <!-- Eyebrows -->
+  <path d="M 160 150 Q 175 145 188 149" stroke="#1f1813" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <path d="M 212 149 Q 225 145 240 150" stroke="#1f1813" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  
+  <!-- Eyes -->
+  <ellipse cx="174" cy="165" rx="6.5" ry="5.5" fill="#1e293b" />
+  <circle cx="176" cy="163" r="2" fill="#ffffff" />
+  <ellipse cx="226" cy="165" rx="6.5" ry="5.5" fill="#1e293b" />
+  <circle cx="228" cy="163" r="2" fill="#ffffff" />
+  
+  <!-- Subtle Glasses (stylish modern frames) -->
+  <rect x="156" y="152" width="36" height="26" rx="8" fill="none" stroke="#2563eb" stroke-width="2.5" />
+  <rect x="208" y="152" width="36" height="26" rx="8" fill="none" stroke="#2563eb" stroke-width="2.5" />
+  <path d="M 192 162 L 208 162" stroke="#2563eb" stroke-width="2.5" />
+  <path d="M 156 160 L 140 156" stroke="#2563eb" stroke-width="2" />
+  <path d="M 244 160 L 260 156" stroke="#2563eb" stroke-width="2" />
+  
+  <!-- Nose -->
+  <path d="M 200 165 L 197 190 Q 200 195 204 190" stroke="#c0845a" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  
+  <!-- Mouth (gentle confident smile) -->
+  <path d="M 184 212 Q 200 224 216 212" stroke="#a3583b" stroke-width="3" stroke-linecap="round" fill="none" />
+  
+  <!-- Subtle beard shadow -->
+  <path d="M 172 205 C 172 235, 228 235, 228 205 C 220 225, 180 225, 172 205 Z" fill="#2d241e" opacity="0.12" />
+</svg>
